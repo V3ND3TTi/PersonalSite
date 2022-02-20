@@ -9,6 +9,46 @@
   <title>V3ND3TTi</title>
 </head>
 <body>
-  
+  <!-- Header -->
+  <nav role="navigation" z-index="99" class="flex justify-between pr-8 items-center w-screen h-20 bg-black text-slate-600 fixed">
+    <img src="/images/BTC Profile 02.JPG" alt="Profile Pic" width="75" class="rounded-full">
+    <div class="hidden md:block text-xl text-bold">
+      <a href="#about" class="p-4 hover:text-blue-600">ABOUT</a>
+      <a href="#portfolio" class="p-4 hover:text-blue-600">PORTFOLIO</a>
+      <a href="#connect" class="p-4 hover:text-blue-600">CONNECT</a>
+    </div>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+  </nav>
+  <nav class="mobile-nav hidden">
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#connect">CONNECT</a>
+  </nav>
+
+  <!-- About -->
+  <section 
+  id="about" class="bg-no-repeat h-screen bg-center bg-cover"
+  style="background-image:url(/images/hex3dbg.jpg)"
+  >
+    <div class="center h-screen">
+      <h1>
+        <span id="name" class="lg:text-9xl sm:text-6xl text-4xl text-slate-600 hover:text-blue-600 duration-300">Devon Vendetti<br></span>
+        <span id="desc" class="lg:text-4xl sm:text-xl text-2xl text-blue-600 hover:text-slate-700 duration-300">Web Developer. Web3/Blockchain Enthusiast.</span>
+      </h1>
+    </div>
+
+  </section>
+  <!-- Portfolio -->
+  <section id="portfolio" class="h-screen bg-slate-600 text-black">
+    
+  </section>
+  <!-- Connect -->
+  <section id="connect" class="h-screen bg-black text-slate-600">
+
+  </section>
+  <!-- Footer -->
+  <script src="/dist/scripts.js"></script>
 </body>
 </html>

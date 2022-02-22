@@ -530,8 +530,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .pr-8 {
   padding-right: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xl {
@@ -547,6 +555,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-slate-600 {
@@ -643,6 +656,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.port-item {
+  background: black;
+  overflow: hidden;
+}
+
+.port-img {
+  transition: 
+  transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear;
+}
+
+.port-img:hover {
+  transform: scale(1.2);
+  opacity: .75;
+}
+
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -662,6 +701,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

@@ -71,3 +71,29 @@
     display: none;
   }
 }
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.port-item {
+  background: black;
+  overflow: hidden;
+}
+
+.port-img {
+  transition: 
+  transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear;
+}
+
+.port-img:hover {
+  transform: scale(1.2);
+  opacity: .75;
+}
